@@ -37,6 +37,12 @@ namespace ProEventos.Controllers
             return buscaEvento;
         }
 
+        [HttpPost]
+        public IActionResult Post([FromBody] Evento evento)
+        {
+            return null;
+        }
+
         [HttpPut("{id}")]
         public string Put(int id)
         {
